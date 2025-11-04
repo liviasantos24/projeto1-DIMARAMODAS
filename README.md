@@ -1,9 +1,11 @@
-💄 Dimara Modas — Painel Administrativo
+# Dimara Modas — Painel Administrativo
 
-Painel administrativo desenvolvido em PHP com MySQL, voltado para o gerenciamento de produtos, clientes e páginas do site da loja Dimara Modas.
+## Painel administrativo desenvolvido em PHP com MySQL, voltado para o gerenciamento de produtos, clientes e páginas do site da loja Dimara Modas.
 O projeto traz um visual moderno e elegante, com cores vermelho, preto e dourado, representando luxo, sofisticação e estilo.
 
-✨ Funcionalidades
+--
+
+# Funcionalidades
 👗 Produtos
 
 Cadastro de novos produtos
@@ -52,7 +54,7 @@ Tabelas modernas com hover dourado
 
 Botões personalizados com transições suaves
 
-🧩 Estrutura de Pastas
+# Estrutura de Pastas
 projeto1/
 │
 ├── admin/
@@ -76,9 +78,9 @@ projeto1/
 
 Acesse o projeto pelo navegador:
 
-http://localhost/projeto1 (v2) (1)/
+http://localhost/projeto1(v2)(1)/ 
 
-💫 Créditos
+# Créditos
 
 Desenvolvido com amor e muito estilo por Lívia Santos,
 com o objetivo de criar um painel administrativo moderno, funcional e digno da marca Dimara Modas.
