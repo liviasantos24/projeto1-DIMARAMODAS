@@ -1,0 +1,350 @@
+/* Título e texto da parte inicial */
+.inicio {
+  text-align: center;
+  margin-top: 40px;
+  color: #f5f5f5;
+}
+
+.inicio h2 {
+  color: #d4af37;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.inicio span {
+  color: #b30000;
+}
+
+.inicio p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.galeria {
+  display: flex;               /* coloca as imagens lado a lado */
+  justify-content: center;     /* centraliza horizontalmente */
+  align-items: flex-start;     /* alinha no topo */
+  gap: 40px;                   /* espaço entre as imagens */
+  flex-wrap: wrap;             /* permite quebrar linha em telas menores */
+  padding: 20px 0;
+  background: none;
+  border: none;
+}
+
+.galeria img {
+  width: 300px;
+  height: 420px;
+  object-fit: cover;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #b30000;
+}
+
+
+
+h1 {
+  color: #d4af37; /* dourado */
+  text-align: center;
+  font-size: 48px; /* tamanho do título */
+  margin-top: 40px;
+  letter-spacing: 2px; /* espaçamento entre letras */
+  text-shadow: 0 0 10px #b30000; /* brilho leve em vermelho */
+}
+
+/* ======== RESET ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ======== BODY ======== */
+body {
+  background-color: #0a0a0a; /* preto elegante */
+  color: #f5f5f5; /* texto branco suave */
+  min-height: 100vh;
+}
+
+/* ======== NAV ======== */
+nav {
+  background: linear-gradient(90deg, #b30000, #8b0000); /* vermelho escuro degradê */
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: 3px solid #d4af37; /* dourado */
+}
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d4af37; /* dourado */
+  text-shadow: 0 0 10px #d4af37;
+}
+
+/* ======== CONTEÚDO ======== */
+h2, h3 {
+  color: #d4af37;
+  margin: 20px 0;
+  text-align: center;
+}
+
+div, form {
+  background-color: #141414;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ======== INPUTS ======== */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #b30000;
+  outline: none;
+  box-shadow: 0 0 8px #b30000;
+}
+
+/* ======== BOTÕES ======== */
+input[type="submit"],
+button {
+  background-color: #b30000;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #d4af37;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* ======== TABELAS / LISTAS ======== */
+hr {
+  border: none;
+  border-top: 1px solid #d4af37;
+  margin: 15px 0;
+}
+
+.galeria img {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======== Tabela de Clientes ======== */
+.tabela-clientes {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  background-color: #141414;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela-clientes th {
+  background-color: #b30000;
+  color: #f5f5f5;
+  padding: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.tabela-clientes td {
+  padding: 12px;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.tabela-clientes tr:hover {
+  background-color: rgba(212,175,55,0.1);
+  transition: 0.3s;
+}
+
+/* ======== Botões ======== */
+.btn-add {
+  background-color: #b30000;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #d4af37;
+  color: #000;
+}
+
+.btn-editar,
+.btn-excluir {
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-editar {
+  background-color: #b30000;
+}
+
+.btn-editar:hover {
+  background-color: #d4af37;
+  color: #000;
+}
+
+.btn-excluir {
+  background-color: #333;
+}
+
+.btn-excluir:hover {
+  background-color: #b30000;
+}
+.btn-voltar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #b30000;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background-color: #d4af37;
+  color: #000;
+}
+/* ======== Tabela de Produtos ======== */
+.tabela-produtos {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  background-color: #141414;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela-produtos th {
+  background-color: #b30000;
+  color: #f5f5f5;
+  padding: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.tabela-produtos td {
+  padding: 12px;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.tabela-produtos tr:hover {
+  background-color: rgba(212,175,55,0.1);
+  transition: 0.3s;
+}
+
+/* ======== Mensagem quando não há produto ======== */
+.sem-produto {
+  color: #d4af37;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+/* ======== Botões ======== */
+.btn-add,
+.btn-editar,
+.btn-excluir {
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-add {
+  background-color: #b30000;
+  color: #fff;
+}
+
+.btn-add:hover {
+  background-color: #d4af37;
+  color: #000;
+}
+
+.btn-editar {
+  background-color: #d4af37;
+  color: #000;
+}
+
+.btn-editar:hover {
+  background-color: #b30000;
+  color: #fff;
+}
+
+.btn-excluir {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-excluir:hover {
+  background-color: #b30000;
+  color: #fff;
+}
+
+
+
+
